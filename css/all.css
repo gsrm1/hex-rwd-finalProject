@@ -1,23 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+/* Noto Sans TC字型導入 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 /* 通用設定 */
 *, *::before, *::after{
     box-sizing: border-box;
 }
 body{
+    color: #3D1101;
     font-size: 16px;
-    font-family:  "Noto Sans TC", Arial, sans-serif;
+    font-weight: 100;
+    font-family:  "Microsoft JhengHei", "Noto Sans TC", sans-serif;
 }
-
 a{
-   text-decoration: none;
+    text-decoration: none;
 }
 img{
     max-width: 100%;
     height: auto;
 }
 /* 通用設定 end */
-
 .wrap{
     max-width: 1024px;
     margin: 0 auto;
@@ -28,8 +29,6 @@ img{
     background-image: url(../images/header_desktop.png);
     background-position: center center;
     background-repeat: no-repeat;
-   
-    
 }
 .nav{
     height: 56px;
@@ -39,15 +38,98 @@ img{
 }
 .nav ul{
     display: flex;
-    
 }
 .nav a{
-    color: white;
+    color: #FFFFFF;
 }
-/* 圖片取代文字技巧 */
 .logo h1{
-    color: white;
     margin: 16px 42px;
     font-size: 1.5em;
-    font-weight: bolder;
+    font-weight: 600;
+    font-family: "Noto Sans TC";
+}
+.menu ul{
+    margin: 18px 48px;
+}
+.menu ul li{
+    margin-left: 30px;
+}
+.menu h3{
+    font-size: 1em;
+}
+.header .content{
+    max-width: 460px;
+    margin: auto;
+    margin-top: 65px;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.3);
+}
+.header .content h2{
+    font-size: 2.25em;
+    margin-bottom: 16px;
+    font-weight: 200;
+}
+.content1{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 1.25em;
+    line-height: 32px;
+    text-align: center;
+}
+/* article1 */
+/* 用:before :after畫左右橫線中間文字效果 */
+.article1 .content1 span{
+    display: block;
+    position: relative;
+}
+.article1 .content1 span:before, .article1 .content1 span:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    background: #979797;
+    width: 10%;
+    height: 1px;
+}
+.article1 .content1 span:before {
+    left: 28%; 
+}
+.article1 .content1 span:after {
+    right: 28%;
+}
+/* 用:before :after畫左右橫線中間文字效果 end*/
+.article1 .content2 > ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.article1 .content2 img{
+    border-radius: 50%;
+}
+.article1 .content2 h4{
+    margin: 20px 0px 10px 0px;
+    font-size: 1.125em;
+}
+.article1 .content2 p{
+    width: 240px;
+    text-align: left;
+}
+/* article1 end */
+.article2{
+    background-color: #3D1101;
+}
+.article2 .content1{
+    display: inline-block;
+}
+.article2 .content2{
+    max-width: 410px;
+    display: inline-block;
+    color: #EFE9E7;
+    border: 1px solid #000;
+}
+.article2 .content2 h4{
+    font-size: 1.25em;
 }
