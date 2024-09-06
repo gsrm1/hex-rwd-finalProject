@@ -374,3 +374,18 @@ a{
     }
 }
 /* footer end */
+
+/* goToTop icon */
+#goToTop{
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 500px) {
+    #goToTop{
+        font-size: 1.5em;
+    }
+}
