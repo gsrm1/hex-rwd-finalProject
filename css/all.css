@@ -20,7 +20,6 @@ a{
 .wrap{
     max-width: 1024px;
     margin: 0 auto;
-    border: 1px solid #000;
 }
 /* header start */
 .header{
@@ -315,6 +314,7 @@ a{
     }
     .article4 .content2 .map{
         height: 386px;
+        margin-bottom: 10px;
     }
     .article4 .content2 .sub-content{
         width: 98%;
@@ -363,12 +363,11 @@ a{
     font-size: 2em;
 }
 @media (max-width: 500px) {
+    .footer{
+        padding: 20px 0px 0px 0px;
+    }
     .footer > ul{
         flex-direction: column;
-    }
-    .footer{
-        border: 1px solid #000;
-        margin-bottom: 20px;
     }
     .footer .content1, .footer .content2,.footer .content3{
         width: 90%;
