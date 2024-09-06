@@ -153,6 +153,7 @@ a{
 .article1 .content2 .sub-content{
     width: 25%;
 }
+/* 消除圖片四角背色*/
 .article1 .content2 img{
     border-radius: 50%;
     max-width: 100%;
@@ -165,6 +166,7 @@ a{
     text-align: left;
 }
 @media (max-width: 500px) {
+    /* 取消畫左右橫線中間文字效果 */
     .article1 .content1 span:before, .article1 .content1 span:after {
         display: none;
     }
@@ -217,6 +219,7 @@ a{
     padding: 50px 0px;
     background-color: rgb(239, 233, 231);
 }
+/* 消除圖片四角背色*/
 .article3 img{
     border-radius: 50%;
     margin-right: 10px;
@@ -283,11 +286,7 @@ a{
     margin-top: 30px;
     float: right;
 }
-.clearfix{
-    clear: both;
-}
 .article4 .content2 .buttons input{
-    display: inline-block;
     width: 70px;
     height: 32px;
     margin-left: 10px;
