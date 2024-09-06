@@ -5,11 +5,6 @@ $(document).ready(function () {
       $('.nav').toggleClass('menu-show');
     });
 
-    $('.menu li').click(function (e) { 
-        e.preventDefault();
-        $(this).addClass('active').siblings().removeClass('active');
-    });
-
     // goToTop icon 使用捲動百分比觸發按鈕
     function showBtnCondition(){
     const scrollTop = $(this).scrollTop();
