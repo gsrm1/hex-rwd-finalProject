@@ -95,6 +95,7 @@ i {
         margin: 15px;
         font-size: 1.2em;
     }
+    /* RWD menu 定位與隱藏*/
     .menu ul{
         position: absolute;
         top: 56px;
@@ -105,7 +106,8 @@ i {
         transition: max-height 1.5s;
         z-index: 10;
     }
-    .menu-show .menu ul {
+    /* RWD menu jQ動態展開 */
+    .menu-show .menu ul{
         max-height: 100px;
     }
     .menu-hamburgerIcon{
@@ -398,7 +400,6 @@ i {
 .food-order{
     display: flex;
     padding: 40px;
-    border: 1px solid #000;
 }
 .food-order .food-menu{
     width: 20%;
@@ -545,5 +546,98 @@ i {
     .food-order .food-list .sub-content{
         width: 100%;
     }
+}
+/* Page2 food-order end */
 
+/* Page3 login start */
+.login{
+    width: 300px;
+    margin: 50px auto;
+}
+.login .title{
+    text-align: center;
+    border-bottom: 3px solid rgb(243, 108, 49);
+}
+.login .title h2{
+    font-size: 3em;
+    font-weight: 500;
+    font-family: "Noto Sans TC";
+    margin-bottom: 5px;
+}
+.login .title h3{
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: "Noto Sans TC";
+    margin-bottom: 35px;
+    
+}
+.login .login-inputs{
+    padding: 15px;
+    box-shadow: 5px 5px 7px hsla(0, 0%, 0%, 0.2);
+}
+.login .login-inputs .forgot-password{
+    margin-top: 5px;
+    font-size: 0.85em;
+    color: rgb(243, 108, 49);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.login .login-inputs h4{
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+/* 在input中加入Fontawesome icon start*/
+.login .login-inputs .mail-box{ 
+    position: relative;
+    margin-bottom: 15px;
+}
+.login .login-inputs .mail-box input{ 
+    text-indent: 20px;
+    width: 270px;
+    height: 32px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.login .login-inputs .mail-box i{
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
+.login .login-inputs .password-box{ 
+    position: relative;
+}
+.login .login-inputs .password-box input{ 
+    text-indent: 20px;
+    width: 270px;
+    height: 32px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.login .login-inputs .password-box i{
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
+/* 在input中加入Fontawesome icon end*/
+.login .input-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.login .input-buttons button{
+    width: 125px;
+    height: 32px;
+    color: white;
+    border-radius: 5px;
+}
+.login .input-buttons .register{
+    border: 1px solid rgb(155, 151, 150);
+    background-color: rgb(155, 151, 150);
+}
+.login .input-buttons .submit{
+    border: 1px solid rgb(243, 108, 49);
+    background-color: rgb(243, 108, 49);
 }
