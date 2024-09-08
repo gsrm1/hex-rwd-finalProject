@@ -97,7 +97,7 @@ i{
 .header .content p{
     font-weight: 300;
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .header{
         background-image: url(../images/header_mobile.png);
     }
@@ -175,7 +175,7 @@ i{
     margin-left: 10px;
     font-size: 2em;
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .footer{
         padding: 20px 0px 0px 0px;
     }
@@ -253,7 +253,7 @@ i{
 .article1 .content2 p{
     text-align: left;
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     /* 取消畫左右橫線中間文字效果 */
     .article1 .content1 span:before, .article1 .content1 span:after {
         display: none;
@@ -292,7 +292,7 @@ i{
     font-size: 1.25em;
     margin-bottom: 16px;
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .article2 ul{
         flex-direction: column;
     }
@@ -335,7 +335,7 @@ i{
     display: block;
     text-align: right;
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .article3 .content2 .sub-content{
         width: 90%;
     }
@@ -392,7 +392,7 @@ i{
 .article4 .content2 .buttons input:active{
     background-color: green;
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .article4 .content2 > ul{
         flex-direction: column;
     }
@@ -537,7 +537,7 @@ i{
         font-size: 1em;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .food-order{
         flex-direction: column;
     }
@@ -760,7 +760,7 @@ i{
 .register .input-buttons a{
     display: inline-block;
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .register .title{
         margin: 0 auto;
         max-width: 320px;
