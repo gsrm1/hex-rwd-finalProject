@@ -5,6 +5,11 @@ $(document).ready(function () {
       $('.nav').toggleClass('menu-show');
     });
     
+    // 點擊後彈出訊息視窗
+    $('.article4 .content2 .buttons .span2').click(function (e) { 
+      alert('已收到您的訂位資訊，請靜候專員與您聯絡。(測試)');
+    });
+    
     // myFav-icon (fontAwesome偽元素)點擊切換icon
     $('.myFav-icon i').click(function (e) { 
       e.preventDefault();
