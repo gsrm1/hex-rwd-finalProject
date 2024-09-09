@@ -41,17 +41,12 @@ input:focus{
     background-image: url(../images/header_desktop.png);
     background-position: center center;
     background-repeat: no-repeat;
-    border: 1px solid transparent;
 }
 .nav{
-    width: 100%;
     height: 56px;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 100;
+    position: relative;
     background-color: hsla(0, 0%, 0%, 0.7);
 }
 .nav ul{
@@ -123,11 +118,9 @@ input:focus{
         right: 0px;
         max-height: 0px;
         overflow: hidden;
-        border-bottom: 2px solid orange;
-        border-radius: 0px 0px 5px 5px;
+        border-bottom: 1px solid white;
         transition: max-height 1.5s;
-        z-index: 100;
-        background-color: hsla(0, 0%, 0%, 0.7);
+        z-index: 10;
     }
     /* RWD menu jQ動態展開 */
     .menu-show .menu ul{
@@ -136,7 +129,7 @@ input:focus{
     .menu-hamburgerIcon{
         position: absolute;
         font-size: 1.2em;
-        border: 1px solid orange;
+        border: 1px solid white;
         text-align: center;
         line-height: 37px;
         width: 80px;
