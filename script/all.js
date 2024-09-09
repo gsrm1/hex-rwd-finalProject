@@ -4,7 +4,7 @@ $(document).ready(function () {
       e.preventDefault();
       $('.nav').toggleClass('menu-show');
     });
-    
+
     // 點擊後彈出訊息視窗
     $('.article4 .content2 .buttons .span2').click(function (e) { 
       alert('已收到您的訂位資訊，請靜候專員與您聯絡。(測試)');
@@ -13,7 +13,7 @@ $(document).ready(function () {
     // myFav-icon (fontAwesome偽元素)點擊切換icon
     $('.myFav-icon i').click(function (e) { 
       e.preventDefault();
-      $(this).toggleClass('fa-brands fa-gratipay');
+      $(this).toggleClass('myFav-active');
     });
    
     // goToTop icon 使用捲動百分比顯示按鈕
