@@ -501,6 +501,26 @@ input:focus{
     margin: 0px 10px 10px 0px;
     box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.2);
 }
+/* 清單上外加標示效果(主廚推薦) start*/
+.food-order .food-list .hotsale{
+    position: relative;
+}
+.food-order .food-list .hotsale .hotsale-box{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: green;
+    clip-path: polygon(45% 0, 0 0, 100% 75%, 100% 40%);
+}
+.food-order .food-list .hotsale .hotsale-box .rotate{
+    color: white;
+    font-weight: 400;
+    transform: translate(10px, 15px) rotate(38deg);
+}
+/* 清單上外加標示效果(主廚推薦) end*/
 .food-order .food-list .sub-content .myFav-icon{
     position: absolute;
     font-size: 1.5em;
